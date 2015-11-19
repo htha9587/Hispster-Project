@@ -34,7 +34,11 @@ public class Hipster
 	
 	private void setUpBooks()
 	{
-	
+		Book firstBook, secondBook, thirdBook;
+		
+		firstBook = new Book(317, "J.R.R Tolkien", "The Hobbit", "Fantsay", 5.00);
+		secondBook = new Book(289, "Arthur C Clarke", "Rendezvous with Rama", "Hard Science Fiction", 5.00);
+		thirdBook = new Book(400, "Carl Sagan", "The Demon Haunted World", "Informative", 10.00);
 	}
 	public Hipster(String name)
 	{
@@ -55,6 +59,14 @@ public class Hipster
 
 	public void setHipsterPhrases(String[] hipsterPhrases) {
 		this.hipsterPhrases = hipsterPhrases;
+	}
+
+	public Book[] getHipsterBooks() {
+		return hipsterBooks;
+	}
+
+	public void setHipsterBooks(Book[] hipsterBooks) {
+		this.hipsterBooks = hipsterBooks;
 	}
 
 	

@@ -3,6 +3,7 @@ package hipster.model;
  * Version 1.1
  * @author htha9587
  *11-19-15
+ *Added second constructor for Hipster Project.
  */
 public class Book 
 {
