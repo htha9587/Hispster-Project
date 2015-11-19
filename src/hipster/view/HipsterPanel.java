@@ -2,7 +2,7 @@ package hipster.view;
 /**
  * 11-17-15
  * @author htha9587
- *
+ *Version 1.1
  */
 
 import javax.swing.*;
@@ -26,9 +26,15 @@ public class HipsterPanel extends JPanel
 	private JButton changeBookButton;
 	private int maxClicks;
 	private int startClick;
+	private JTextField textField;
 	
 	public HipsterPanel(HipsterAppController baseController)
 	{
+		setBackground(Color.ORANGE);
+		
+		
+		
+		
 		
 	}
 	
@@ -49,12 +55,19 @@ public class HipsterPanel extends JPanel
 	
 	private void setUpLayout()
 	{
+		JButton btnNewButton = new JButton("New button");
+		add(btnNewButton);
+		
+		JButton button = new JButton("New button");
+		add(button);
 		
 	}
 	
 	private void setUpListeners()
 	{
-		
+		textField = new JTextField();
+		add(textField);
+		textField.setColumns(10);
 	}
 	
 }
